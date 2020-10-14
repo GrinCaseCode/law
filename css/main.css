@@ -424,6 +424,9 @@ strong {
 .form-phone input {
 	max-width: 260px;
 }
+.form-phone .item-form {
+	margin-bottom: 0;
+}
 .form-phone {
 	margin-left: 33px;
 	margin-top: 15px;
@@ -671,6 +674,11 @@ strong {
 }
 .fancybox-skin {
 	padding: 0 !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
+.fancybox-inner {
+	overflow: visible !important;
 }
 
 .footer {
@@ -864,3 +872,150 @@ box-shadow: 0 0 10px #430a0f;
 }
 
 /*End Sandwich*/
+
+.modal-block {
+	color: #fff;
+	display: none;
+}
+.modal-wrap {
+	width: 693px;
+	max-width: 100%;
+	padding: 100px 120px;
+	background-color: #2c2f3a;
+background-image: linear-gradient(-47deg, rgba(44, 47, 58, 0.76) 0%, rgba(67, 10, 15, 0.76) 50%, rgba(44, 47, 58, 0.76) 100%);
+position: relative;
+z-index: 1;
+}
+.modal-wrap::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 33px;
+	bottom: 33px;
+	left: 33px;
+	right: 33px;	
+	z-index: -1;
+	pointer-events: none;
+	background-color: #2c2f3a;
+}
+.title-modal {
+	font-size: 40px;
+	padding-bottom: 10px;
+font-weight: 700;
+text-align: center;
+}
+.descr-modal {
+	font-size: 18px;
+	line-height: 30px;
+	padding-bottom: 35px;
+	text-align: center;
+}
+.item-form {
+	margin-bottom: 21px;
+}
+.modal-wrap .btn-main {
+	padding: 28px 30px;
+	font-size: 16px;
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	margin-top: 40px;
+}
+.checkbox {
+	font-size: 14px;
+	text-align: left;
+}
+.checkbox label input {
+	position: absolute;
+	z-index: -1;
+	height: 1px !important;
+	width: 1px !important;
+	opacity: 0 !important;
+	margin: 1px 0 0 7px !important;
+}
+.checkbox label span {
+	position: relative;
+	padding: 3px 0 0 23px;
+	display: block;
+	cursor: pointer;
+}
+.checkbox label span:before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #fff;
+	transition: .2s;
+}
+.checkbox label span:after {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 0px;
+	width: 15px;
+	height: 15px;
+	content: "\f00c";
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 900;
+	background-image: none;
+	color: #fff;
+	font-size: 7px;
+	opacity: 0;
+	transition: .2s;
+}
+.checkbox label input:checked + span:after {
+	opacity: 1;
+}
+.checkbox-wrap {
+	margin-top: 40px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.fancybox-close {
+	top: 45px;
+	right: 48px;
+	width: 15px;
+	height: 15px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	background: none !important;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	transform: rotate(44deg);
+	color: #f9bc23;
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 700;
+	font-size: 20px;
+}
+.fancybox-close:before {
+	content: "\f067";
+}
