@@ -455,6 +455,12 @@
     .footer__bottom .col_pl  {
     	text-align: right;
     }
+    .btn-main_more i {
+    margin-left: 4px;
+}
+.item-portfolio__bottom .btn-main_more {
+    padding: 11px 33px;
+    }
 }
 
 /* Custom, iPhone Retina */
